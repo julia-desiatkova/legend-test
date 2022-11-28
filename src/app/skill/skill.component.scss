@@ -1,0 +1,39 @@
+@import "../../styles/_vars";
+@import "../../styles/_mixins";
+
+.skill {
+    color: $text;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;    
+    &.skill_future {
+        background-color: $background_60;
+        opacity: 0.8;
+    }
+    .skill__title {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        h5 {
+            @include uppercase();
+            margin: 0;
+        }    
+    }
+    .skill__description {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .skill__description__bonus-name {
+            font-size: 20px;
+        }
+        .skill__description__line {
+            flex-grow: 1;
+            border: 1px solid $line;
+        }
+        .skill__description__bonus {
+            font-size: 24px;
+            color: $counts;
+        }
+    }
+}

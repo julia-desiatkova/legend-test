@@ -1,0 +1,13 @@
+<div class="skill" [class.skill_future]="type == 'future'">
+    <div class="skill__title">
+        <ng-container *ngTemplateOutlet="progressTemplate"></ng-container>
+        <h5>{{ name }}</h5>
+    </div>
+    <div class="skill__description">
+        <div class="skill__description__bonus-name">{{ bonusName }}</div>
+        <div class="skill__description__line"></div>
+        <div class="skill__description__bonus">{{ bonus }}</div>    
+    </div>
+</div>
+
+

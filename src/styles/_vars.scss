@@ -1,0 +1,36 @@
+$background: #000000;
+$background_80: rgba($background, 0.8);
+$background_60: rgba($background, 0.6);
+
+$background_primary: #0D111C;
+$background_secondary: #1B1E28;
+
+$accent: #ffffff;
+$accent_80: rgba($accent, 0.8);
+$accent_70: rgba($accent, 0.7);
+$accent_60: rgba($accent, 0.6);
+$accent_50: rgba($accent, 0.5);
+$accent_40: rgba($accent, 0.4);
+$accent_30: rgba($accent, 0.3);
+$accent_20: rgba($accent, 0.2);
+$accent_10: rgba($accent, 0.1);
+
+$secondary: #F1CD75;
+$secondary_80: rgba($secondary, 0.8);
+$secondary_70: rgba($secondary, 0.7);
+$secondary_60: rgba($secondary, 0.6);
+$secondary_50: rgba($secondary, 0.5);
+$secondary_40: rgba($secondary, 0.4);
+
+$info: #5CA78F;
+$info_80: rgba($info, 0.8);
+$info_70: rgba($info, 0.7);
+$info_60: rgba($info, 0.6);
+$info_50: rgba($info, 0.5);
+$info_40: rgba($info, 0.4);
+
+$text: $accent_70;
+$subheader: $info_80;
+$addheader: $secondary_40;
+$line: $accent_10;
+$counts: $info;

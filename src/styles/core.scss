@@ -1,0 +1,37 @@
+body {
+    font-family: SourceSansPro, sans-serif;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100vh;
+    background: $background;
+    padding: 32px;
+    color: $accent;
+}
+app-root {
+    width: 560px;
+    background: $background_primary;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    .switcher {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+        button {
+            flex-grow: 1;
+            background-color: $background;
+            color: $text;
+            border-radius: 8px;
+            padding: 20px;
+            -webkit-appearance: none;
+            text-transform: uppercase;
+            @include uppercase();
+            border: none;
+            outline: none;
+        }
+    }
+}

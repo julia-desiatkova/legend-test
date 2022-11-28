@@ -1,0 +1,15 @@
+<main>
+    <app-upgrade
+        [image]="data[n].image"
+        [name]="data[n].name"
+        [space]="data[n].space"
+        [description]="data[n].description"
+        [describe]="data[n].describe"
+        [skill]="data[n].skill"
+        ></app-upgrade>
+</main>
+<div class="switcher">
+    <button (click)="n = 0">Unstoppable</button>
+    <button (click)="n = 1">Overgrown</button>
+    <button (click)="n = 2">Lovable</button>
+</div>

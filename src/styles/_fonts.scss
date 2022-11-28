@@ -1,0 +1,34 @@
+$fontsPath: "/assets/fonts/";
+
+// Добавьте название нового шрифта в Regular или Light список
+$fontRegularNames: (
+    'SourceSansPro',
+);
+
+// Сюда добавлять начертания (будет работать только если поддержать это в коде)
+$fontsRegular: (
+    'Regular': 400,
+    'SemiBold': 500,
+    'Bold': 700 
+);
+
+// Дальше идет сборка шрифтов
+@mixin font($fontName, $fontType, $fontWidth, $fontsPath: $fontsPath) {
+    font-family: '#{$fontName}';
+    src: url('#{$fontsPath}#{$fontName}-#{$fontType}.ttf') format('truetype');
+    font-weight: #{$fontWidth};
+    font-style: normal;
+}
+
+@mixin eachfont($name, $fonts) {
+    @each $type, $width in $fonts {
+        @font-face {
+            @include font('#{$name}', '#{$type}', '#{$width}');
+        }    
+    }
+}
+
+@each $name in $fontRegularNames {
+    @include eachfont($name, $fontsRegular)
+}
+

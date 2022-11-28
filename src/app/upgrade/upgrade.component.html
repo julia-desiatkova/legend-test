@@ -1,0 +1,19 @@
+<app-header [image]="image" [name]="name" [space]="space" [description]="description"></app-header>
+<app-status></app-status>
+<app-describe>
+    <ng-template describeTemplate="text">
+        {{ describe }}
+    </ng-template>        
+</app-describe>
+<div class="skills">
+    <app-skill [name]="skill[0].name" [bonusName]="skill[0].bonusName" [bonus]="skill[0].bonus" type="current">
+        <ng-template skillTemplate="progress">
+            <app-progress [persent]="skill[0].persent"></app-progress>
+        </ng-template>        
+    </app-skill>
+    <app-skill [name]="skill[1].name" [bonusName]="skill[1].bonusName" [bonus]="skill[1].bonus" type="future">    
+        <ng-template skillTemplate="progress">
+            <app-progress [persent]="skill[1].persent"></app-progress>
+        </ng-template>        
+    </app-skill>    
+</div>

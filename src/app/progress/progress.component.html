@@ -1,0 +1,12 @@
+<div class="progress">
+    <div class="progress__line"></div>
+    <svg viewBox="0 0 200 200">
+        <g transform="translate(100,100)">
+          <path *ngIf="persent == '1/4' || persent == '2/4' || persent == '3/4' || persent == '4/4'" d="M0 0-70 70A99 99 0 0 1-70-70Z"/>
+          <path *ngIf="persent == '2/4' || persent == '3/4' || persent == '4/4'" d="M0 0-70-70A99 99 0 0 1 70-70Z"/>
+          <path *ngIf="persent == '3/4' || persent == '4/4'" d="M0 0 70-70A99 99 0 0 1 70 70Z"/>
+          <path *ngIf="persent == '4/4'" d="M0 0 70 70A99 99 0 0 1-70 70Z"/>
+        </g>
+    </svg>
+</div>
+ 
